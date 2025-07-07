@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+        <div class="container">
+            <div class="login">
+                <h1>Login</h1>
+                <input id="password" type="password" placeholder="Enter your password" required><br>
+                <button onclick="checkPassword()">Login</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function checkPassword() {
+        const passwordInput = document.getElementById('password').value;
+        if (passwordInput === 'RR2233') {
+            window.location.href = 'home.htm'; // Redirect to index.html
+        } else {
+            alert('Incorrect password!');
+        }
+    }
+</script>
+</html>
